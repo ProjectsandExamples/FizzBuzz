@@ -37,10 +37,11 @@ end;
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   FizzInt := StrToInt(Edit1.Text);
-  if StrToInt(Edit1.Text) mod 15 = 0 then  Label1.Caption := 'FizzBuzz'
-  else  if StrToInt(Edit1.Text) mod 5 = 0 then  Label1.Caption := 'Buzz'
+  if StrToInt(Edit1.Text) = 0 then Label1.Caption := Edit1.Text + ' (N/A)'
+  else if StrToInt(Edit1.Text) mod 15 = 0 then  Label1.Caption := 'FizzBuzz'
+  else  if StrToInt(Edit1.Text) mod 5 = 0 then Label1.Caption := 'Buzz'
         else  if StrToInt(Edit1.Text) mod 3 = 0 then  Label1.Caption := 'Fizz'
-              else Label1.Caption := Edit1.Text;
+              else Label1.Caption := Edit1.Text + ' (N/A)';
 
 end;
 

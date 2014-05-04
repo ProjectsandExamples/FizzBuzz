@@ -15,18 +15,20 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 251
+    Left = 283
     Top = 216
     Width = 47
     Height = 13
     Caption = 'Response'
   end
   object Label2: TLabel
-    Left = 248
-    Top = 48
-    Width = 97
+    Left = 208
+    Top = 40
+    Width = 212
     Height = 13
-    Caption = 'Enter Number Below'
+    Align = alCustom
+    Alignment = taCenter
+    Caption = 'Enter number below for FizzBuzz verification'
   end
   object Edit1: TEdit
     Left = 248
@@ -40,7 +42,7 @@ object Form1: TForm1
     Top = 136
     Width = 121
     Height = 41
-    Caption = 'Press Me'
+    Caption = 'Check'
     TabOrder = 1
     OnClick = Button1Click
   end
