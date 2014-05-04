@@ -1,4 +1,4 @@
 FizzBuzz
 ========
 
-A simple FizzBuzz Checker
+A simple FizzBuzz checker written in Delphi
